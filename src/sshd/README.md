@@ -7,7 +7,7 @@ Adds a SSH server into a container so that you can use an external terminal, sft
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/sshd:1": {}
+    "ghcr.io/dofaromg/features/sshd:1": {}
 }
 ```
 
@@ -15,8 +15,8 @@ Adds a SSH server into a container so that you can use an external terminal, sft
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| gatewayPorts | Enable other hosts in the same network to connect to the forwarded ports | string | no
 | version | Currently unused. | string | latest |
+| gatewayPorts | Enable other hosts in the same network to connect to the forwarded ports | string | no |
 
 ## Usage
 
@@ -91,4 +91,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/sshd/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dofaromg/features/blob/main/src/sshd/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

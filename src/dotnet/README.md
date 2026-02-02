@@ -7,7 +7,7 @@ This Feature installs the latest .NET SDK, which includes the .NET CLI and the s
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/dotnet:2": {}
+    "ghcr.io/dofaromg/features/dotnet:2": {}
 }
 ```
 
@@ -15,10 +15,10 @@ This Feature installs the latest .NET SDK, which includes the .NET CLI and the s
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select or enter a .NET SDK version. Use 'latest' for the latest version, 'lts' for the latest LTS version, 'X.Y' or 'X.Y.Z' for a specific version. | string | latest |
-| additionalVersions | Enter additional .NET SDK versions, separated by commas. Use 'latest' for the latest version, 'lts' for the latest LTS version, 'X.Y' or 'X.Y.Z' for a specific version. | string | - |
-| dotnetRuntimeVersions | Enter additional .NET runtime versions, separated by commas. Use 'latest' for the latest version, 'lts' for the latest LTS version, 'X.Y' or 'X.Y.Z' for a specific version. | string | - |
-| aspNetCoreRuntimeVersions | Enter additional ASP.NET Core runtime versions, separated by commas. Use 'latest' for the latest version, 'lts' for the latest LTS version, 'X.Y' or 'X.Y.Z' for a specific version. | string | - |
+| version | Select or enter a .NET SDK version. Use 'latest' for the latest version, 'lts' for the latest LTS version, 'X.Y' or 'X.Y.Z' for a specific version, 'X.Y-preview' or 'X.Y-daily' for prereleases. | string | latest |
+| additionalVersions | Enter additional .NET SDK versions, separated by commas. Use 'latest' for the latest version, 'lts' for the latest LTS version, 'X.Y' or 'X.Y.Z' for a specific version, 'X.Y-preview' or 'X.Y-daily' for prereleases. | string | - |
+| dotnetRuntimeVersions | Enter additional .NET runtime versions, separated by commas. Use 'latest' for the latest version, 'lts' for the latest LTS version, 'X.Y' or 'X.Y.Z' for a specific version, 'X.Y-preview' or 'X.Y-daily' for prereleases. | string | - |
+| aspNetCoreRuntimeVersions | Enter additional ASP.NET Core runtime versions, separated by commas. Use 'latest' for the latest version, 'lts' for the latest LTS version, 'X.Y' or 'X.Y.Z' for a specific version, 'X.Y-preview' or 'X.Y-daily' for prereleases. | string | - |
 | workloads | Enter additional .NET SDK workloads, separated by commas. Use 'dotnet workload search' to learn what workloads are available to install. | string | - |
 
 ## Customizations
@@ -39,9 +39,10 @@ Installing only the latest .NET SDK version (the default).
 
 Installing an additional SDK version. Multiple versions can be specified as comma-separated values.
 
-``` json
+``` jsonc
 "features": {
     "ghcr.io/devcontainers/features/dotnet:2": {
+        "version": "latest", // (this can be omitted)
         "additionalVersions": "lts"
     }
 }
@@ -100,6 +101,19 @@ Installing .NET workloads. Multiple workloads can be specified as comma-separate
 }
 ```
 
+Installing prerelease builds. Supports `preview` and `daily` suffixes.
+
+``` json
+"features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+        "version": "10.0-preview",
+        "additionalVersions": "10.0.1xx-daily",
+        "dotnetRuntimeVersions": "10.0-daily",
+        "aspnetCoreRuntimeVersions": "10.0-daily"
+    }
+}
+```
+
 ## OS Support
 
 This Feature should work on recent versions of Debian/Ubuntu-based distributions with the `apt` package manager installed.
@@ -109,4 +123,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/dotnet/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dofaromg/features/blob/main/src/dotnet/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
