@@ -52,7 +52,7 @@ jobs:
               git add src/oryx/devcontainer-feature.json
 
               git commit -m 'Bump version'
-              git push origin "$branch"
+              git push --force-with-lease origin "$branch"
               gh api \
                 --method POST \
                 -H "Accept: application/vnd.github+json" \
