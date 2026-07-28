@@ -7,7 +7,7 @@ Installs Go and common Go utilities. Auto-detects latest version and installs ne
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/go:1": {}
+    "ghcr.io/dofaromg/features/go:1": {}
 }
 ```
 
@@ -35,4 +35,4 @@ This Feature should work on recent versions of Debian/Ubuntu, RedHat Enterprise 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/go/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dofaromg/features/blob/main/src/go/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

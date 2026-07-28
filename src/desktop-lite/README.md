@@ -7,7 +7,7 @@ Adds a lightweight Fluxbox based desktop to the container that can be accessed u
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    "ghcr.io/dofaromg/features/desktop-lite:1": {}
 }
 ```
 
@@ -16,7 +16,7 @@ Adds a lightweight Fluxbox based desktop to the container that can be accessed u
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Currently Unused! | string | latest |
-| noVncVersion | The noVNC version to use | string | 1.2.0 |
+| noVncVersion | The noVNC version to use | string | 1.6.0 |
 | password | Enter a password for desktop connections. If "noPassword", connections from the local host can be established without entering a password | string | vscode |
 | webPort | Enter a port for the VNC web client (noVNC) | string | 6080 |
 | vncPort | Enter a port for the desktop VNC server (TigerVNC) | string | 5901 |
@@ -106,4 +106,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/desktop-lite/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dofaromg/features/blob/main/src/desktop-lite/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
