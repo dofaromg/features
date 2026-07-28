@@ -24,7 +24,7 @@ env:
 
 jobs:
   build:
-    if: ${{ hashFiles('Dockerfile') != '' }}
+    if: hashFiles('Dockerfile') != ''
 
     runs-on: ubuntu-latest
     permissions:
