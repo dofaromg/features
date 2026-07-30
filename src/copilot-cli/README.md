@@ -1,13 +1,13 @@
 
 # GitHub Copilot CLI (copilot-cli)
 
-Installs the GitHub Copilot CLI. Auto-detects latest version and installs needed dependencies.
+Installs the GitHub Copilot CLI.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/copilot-cli:1": {}
+    "ghcr.io/dofaromg/features/copilot-cli:1": {}
 }
 ```
 
@@ -28,4 +28,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/copilot-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dofaromg/features/blob/main/src/copilot-cli/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

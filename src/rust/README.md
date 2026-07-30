@@ -7,7 +7,7 @@ Installs Rust, common Rust utilities, and their required dependencies
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/rust:1": {}
+    "ghcr.io/dofaromg/features/rust:1": {}
 }
 ```
 
@@ -44,4 +44,4 @@ by default. Instead, it uses musl libc, which is not binary-compatible with glib
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/rust/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dofaromg/features/blob/main/src/rust/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
